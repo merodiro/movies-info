@@ -6,7 +6,9 @@
       </div>
     </div>
 
-    <div class="row" v-if="movies">
+    <hr>
+
+    <div class="row" v-if="movies.lengh">
       <div class="col-md-3" v-for="movie in movies" :key="movie">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -20,8 +22,10 @@
         </div>
       </div>
     </div>
+    <div class="lead text-center" v-else-if="query == ''">
+      Type something to search
+    </div>
     <div class="lead text-center" v-else>
-      <br>
       No movies found
     </div>
   </section>
@@ -45,7 +49,7 @@ export default {
   methods: {
     search: _.debounce(
       function () {
-        axios.get('http://www.omdbapi.com/?s=' + this.query)
+        axios.get('https://www.omdbapi.com/?s=' + this.query)
           .then(res => {
             this.movies = res.data.Search
           })

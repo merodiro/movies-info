@@ -23,7 +23,7 @@
         <h3>Plot</h3>
         {{movie.Plot}}
         <hr>
-        <a :href="'http://imdb.com/title/' + movie.imdbID" target="_blank" class="btn btn-primary">View IMDB</a>
+        <a :href="'https://imdb.com/title/' + movie.imdbID" target="_blank" class="btn btn-primary">View IMDB</a>
         <router-link to="/" class="btn btn-default">
           Go back to search
         </router-link>
