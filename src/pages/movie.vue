@@ -2,18 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <img :src="movie.Poster" class="img-responsive thumnail">
+        <img :src="movie.Poster" class="img-responsive thumbnail">
       </div>
       <div class="col-md-8">
         <h3>{{ movie.Title }}</h3>
         <ul class="list-group">
-          <li class="list-group-item"><strong>Genre:</strong><span class="pull-right">{{movie.Genre}}</span></li>
-          <li class="list-group-item"><strong>Released:</strong><span class="pull-right">{{movie.Released}}</span></li>
-          <li class="list-group-item"><strong>Rated:</strong><span class="pull-right">{{movie.Rated}}</span></li>
-          <li class="list-group-item"><strong>IMDB Rating:</strong><span class="pull-right">{{movie.imdbRating}}</span></li>
-          <li class="list-group-item"><strong>Director:</strong><span class="pull-right">{{movie.Director}}</span></li>
-          <li class="list-group-item"><strong>Writer:</strong><span class="pull-right">{{movie.Writer}}</span></li>
-          <li class="list-group-item"><strong>Actors:</strong><span class="pull-right">{{movie.Actors}}</span></li>
+          <li class="list-group-item clearfix"><strong>Genre:</strong><span class="pull-right">{{movie.Genre}}</span></li>
+          <li class="list-group-item clearfix"><strong>Released:</strong><span class="pull-right">{{movie.Released}}</span></li>
+          <li class="list-group-item clearfix"><strong>Rated:</strong><span class="pull-right">{{movie.Rated}}</span></li>
+          <li class="list-group-item clearfix"><strong>IMDB Rating:</strong><span class="pull-right">{{movie.imdbRating}}</span></li>
+          <li class="list-group-item clearfix"><strong>Director:</strong><span class="pull-right">{{movie.Director}}</span></li>
+          <li class="list-group-item clearfix"><strong>Writer:</strong><span class="pull-right">{{movie.Writer}}</span></li>
+          <li class="list-group-item clearfix"><strong>Actors:</strong><span class="pull-right">{{movie.Actors}}</span></li>
         </ul>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <h3>Plot</h3>
         {{movie.Plot}}
         <hr>
-        <a :href="'https://imdb.com/title/' + movie.imdbID" target="_blank" class="btn btn-primary">View IMDB</a>
+        <a :href="'http://imdb.com/title/' + movie.imdbID" target="_blank" class="btn btn-primary">View IMDB</a>
         <router-link to="/" class="btn btn-default">
           Go back to search
         </router-link>

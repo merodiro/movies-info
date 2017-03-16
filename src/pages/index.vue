@@ -8,7 +8,7 @@
 
     <hr>
 
-    <div class="row" v-if="movies.lengh">
+    <div class="row" v-if="movies">
       <div class="col-md-3" v-for="movie in movies" :key="movie">
         <div class="panel panel-default">
           <div class="panel-heading">
@@ -38,7 +38,7 @@ export default {
   data () {
     return {
       query: '',
-      movies: {}
+      movies: ''
     }
   },
   watch: {

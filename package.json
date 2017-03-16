@@ -8,7 +8,7 @@
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "deploy": "surge -p dist -d movies-list.surge.sh"
+    "deploy": "surge -p dist -d movies-info.surge.sh"
   },
   "dependencies": {
     "axios": "^0.15.3",
