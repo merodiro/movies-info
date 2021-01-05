@@ -11,7 +11,7 @@
     "deploy": "surge -p dist -d movies-info.surge.sh"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "lodash": "^4.17.4",
     "vue": "^2.2.2",
     "vue-router": "^2.2.0"
